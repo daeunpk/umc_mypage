@@ -35,6 +35,7 @@ button {
     padding-top: 32px;
     padding-left: 32px;
 }
+
 .profile-picture {
     position: relative;
     width: 114px;
@@ -45,7 +46,7 @@ button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #FFFFFF;
     object-fit: cover;
 }
 
@@ -84,7 +85,7 @@ button {
     border: none;
     margin-left: auto;
     padding: 8px 12px;
-    background-color: #000000b2;
+    background-color: #8080804d;
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -92,7 +93,7 @@ button {
 }
 
 .profile-info-edit:hover {
-    background-color: #8080804d;
+    background-color: #000000b2;
 }
 
 .menu-carousel {
