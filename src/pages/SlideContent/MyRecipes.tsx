@@ -85,8 +85,8 @@ const MyRecipe: React.FC = () => {
                         <div className="recipe-header">
                             <div>{recipe.createdAt}</div>
                             <div className="views-likes-container">
-                                <img src="/image/eye.png" alt="조회수" /> {recipe.views}
-                                <img src="/image/saveIcon.png" alt="저장수" /> {recipe.likes}
+                                <img src="/image/eye.png" alt="조회수" />{recipe.views}
+                                <img src="/image/saveIcon.png" alt="저장수" />{recipe.likes}
                             </div>
                         </div>
                         <div className="recipe-title">
