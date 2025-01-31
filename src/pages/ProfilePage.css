@@ -2,13 +2,14 @@ body {
     min-width: 688px;
     margin: 0;
     padding: 0;
-    font-family: 'Pretendard', sans-serif;
+    font-family: "Pretendard", sans-serif;
     background-color: #181818;
     color: #ffffff;
+    overflow-y: auto !important;
 }
 
 button {
-    font-family: 'Pretendard', sans-serif;
+    font-family: "Pretendard", sans-serif;
 }
 
 .profile-page {
@@ -19,20 +20,20 @@ button {
 }
 
 .profile-header {
-    width:688px;
-    height:178px;
+    width: 688px;
+    height: 178px;
     margin: 81px auto;
-    border-radius:16px;
-    background-color: #1C1D1D;
+    border-radius: 16px;
+    background-color: #1c1d1d;
 }
 
-.profile-container{
+.profile-container {
     width: 431px;
     height: 114px;
     display: flex;
-    margin:0;
-    padding-top:32px;
-    padding-left:32px;
+    margin: 0;
+    padding-top: 32px;
+    padding-left: 32px;
 }
 .profile-picture {
     position: relative;
@@ -49,10 +50,10 @@ button {
 }
 
 .profile-info {
-    width:277px;
+    width: 277px;
     height: 79px;
-    margin-left:40px;
-    margin-top:17px;
+    margin-left: 40px;
+    margin-top: 17px;
 }
 
 .profile-info h2 {
@@ -64,16 +65,16 @@ button {
 }
 
 .profile-info p {
-    width:100%;
+    width: 100%;
     height: 33px;
     margin: 9px 0;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 500;
     display: flex;
     flex-direction: row;
     align-items: center;
     line-height: 23.87px;
-    letter-spacing:-0.8px;
+    letter-spacing: -0.8px;
 }
 
 .profile-info-edit {
@@ -83,15 +84,15 @@ button {
     border: none;
     margin-left: auto;
     padding: 8px 12px;
-    background-color: #000000B2;
+    background-color: #000000b2;
     color: white;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 500;
-    letter-spacing:-0.56px;
+    letter-spacing: -0.56px;
 }
 
 .profile-info-edit:hover {
-    background-color: #8080804D;
+    background-color: #8080804d;
 }
 
 .menu-carousel {
@@ -143,7 +144,7 @@ button {
     border: none;
     border-radius: 8px;
     background-color: transparent;
-    color: #A8AAAB;
+    color: #a8aaab;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
@@ -153,13 +154,11 @@ button {
 
 .menu-navigation .active-menu {
     background-color: #383939;
-    color: #F3F5F6;
+    color: #f3f5f6;
 }
 
 .menu-separator {
     font-size: 30px;
     font-weight: 200;
-    color: #5152534D;
+    color: #5152534d;
 }
-
-
