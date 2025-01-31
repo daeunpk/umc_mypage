@@ -27,7 +27,7 @@ const MyRecipe: React.FC = () => {
             stepsCount: 3,
             alcoholContent: "Light",
             views: 21,
-            likes: 3,
+            likes: 4,
             createdAt: "2025. 1. 12",
         },
         {
@@ -51,9 +51,9 @@ const MyRecipe: React.FC = () => {
 
     return (
         <div className="my-recipe-container">
-            <div className={`dropdown ${sortOption === "최신순" ? "default" : "active"}`}>
+            <div className="dropdown">
                 <button
-                    className={`dropdown-btn ${sortOption === "최신순" ? "default" : "active"}`}
+                    className={`dropdown-btn ${sortOption === "기본" ? "default" : "active"}`}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
                     {sortOption}
@@ -83,37 +83,41 @@ const MyRecipe: React.FC = () => {
                 {sortedRecipes.map((recipe) => (
                     <div key={recipe.id} className="recipe-card">
                         <div className="recipe-header">
-                            <span>{recipe.createdAt}</span>
-                            <span><img src="/image/eye.png" alt="조회수" /> {recipe.views}</span>
-                            <span><img src="/image/saveIcon.png" alt="저장수" /> {recipe.likes}</span>
+                            <div>{recipe.createdAt}</div>
+                            <div className="views-likes-container">
+                                <img src="/image/eye.png" alt="조회수" /> {recipe.views}
+                                <img src="/image/saveIcon.png" alt="저장수" /> {recipe.likes}
+                            </div>
                         </div>
                         <div className="recipe-title">
                             <span>{recipe.title}</span>
                         </div>
-                        <div className="recipe-details">
-                            <span className="feature">
-                                <div className="feature-circle">재료 {recipe.ingredientsCount}개</div>
-                            </span>
-                            <span className="feature">
-                                <div className="feature-circle">{recipe.stepsCount}단계</div>
-                            </span>
-                            <span className="feature">
-                                <div className="feature-circle">도수 {recipe.alcoholContent}</div>
-                            </span>
-                        </div>
-                        <div className="recipe-footer">
-                            <button
-                                className="view-btn"
-                                onClick={() => window.location.href = `/recipe/${recipe.id}`}
-                            >
-                                전체글 보기
-                            </button>
-                            <button
-                                className="edit-btn"
-                                onClick={() => window.location.href = `/edit/${recipe.id}`}
-                            >
-                                수정하기
-                            </button>
+                        <div className="recipe-container">
+                            <div className="recipe-details">
+                                <span className="feature1">
+                                    <div className="feature-circle"><img src="public\image\water_drop.png" alt="물방울 이미지"></img>재료 {recipe.ingredientsCount}개</div>
+                                </span>
+                                <span className="feature2">
+                                    <div className="feature-circle"><img src="public\image\Clock.png" alt="시계 이미지"></img>{recipe.stepsCount}단계</div>
+                                </span>
+                                <span className="feature3">
+                                    <div className="feature-circle"><img src="public\image\local_bar.png" alt="칵테일 이미지"></img>도수 {recipe.alcoholContent}</div>
+                                </span>
+                            </div>
+                            <div className="recipe-footer">
+                                <button
+                                    className="view-btn"
+                                    onClick={() => window.location.href = `/recipe/${recipe.id}`}
+                                >
+                                    전체글 보기
+                                </button>
+                                <button
+                                    className="edit-btn"
+                                    onClick={() => window.location.href = `/edit/${recipe.id}`}
+                                >
+                                    수정하기
+                                </button>
+                            </div>
                         </div>
                     </div>
                 ))}

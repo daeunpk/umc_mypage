@@ -1,3 +1,12 @@
+body {
+    font-family: "Pretendard", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Pretendard", sans-serif;
+}
+
 .my-recipe-container {
     width: 100%;
     max-width: 800px;
@@ -21,20 +30,13 @@
     box-sizing: border-box;
 }
 
-.dropdown.default {
-    background-color: gray;
-    border: 1px solid #999999;
-    color: #8D8F90;
-}
-
-.dropdown.active {
-    background-color: #242525;
-    border: 1px solid #F3F5F6;
-    color: #8D8F90;
-}
-
 .dropdown-btn {
     border: none;
+    border: 1px solid #999999;
+    color: #8D8F90;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -0.64px;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -72,25 +74,41 @@
 
 
 .recipe-list {
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .recipe-card {
-    background: #222;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    background: #242525;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 16px;
 }
 
 .recipe-header {
-    font-size: 0.9em;
-    color: #bbb;
+    font-size: 14px;
+    line-height: 16.71px;
+    letter-spacing: -0.56px;
+    color: #8D8F90;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-header img {
+    width: 16px;
+    height: 16px;
 }
 
 .recipe-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 5px 0;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -0.64px;
+    margin-bottom: 20px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .recipe-details {
@@ -98,22 +116,35 @@
     gap: 10px;
 }
 
-
-.feature {
+.feature1, .feature2, .feature3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 8px 12px;
     font-size: 12px;
-    color: #333;
+    color: #FFFFFF;
     min-width: 60px;
     height: 60px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 0.8px solid #515253;
+    box-sizing: border-box;
 }
 
+.feature1 {
+    width: 91px;
+    height: 36px;
+}
+
+.feature2 {
+    width: 76px;
+    height: 36px;
+}
+
+.feature3 {
+    width: 100px;
+    height: 36px;
+}
 
 .recipe-footer {
     display: flex;
@@ -123,17 +154,22 @@
 
 .view-btn,
 .edit-btn {
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
+    border-radius: 40px;
+    border: 1px solid #00000033;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 16.71px;
+    letter-spacing: -0.56px;
 }
 
 .view-btn {
-    background: #555;
-    color: white;
+    width: 110px;
+    height: 41px;
+    background: #555555;
+    color: #F3F5F6;
 }
 
 .edit-btn {
-    background: #777;
-    color: white;
+    background: #FFFFFF;
+    color: #000000;
 }
