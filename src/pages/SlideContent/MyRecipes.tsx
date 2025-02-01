@@ -28,7 +28,7 @@ const MyRecipe: React.FC = () => {
             alcoholContent: "Light",
             views: 21,
             likes: 4,
-            createdAt: "2025. 1. 12",
+            createdAt: "2025. 1. 12.",
         },
         {
             id: 2,
@@ -38,7 +38,7 @@ const MyRecipe: React.FC = () => {
             alcoholContent: "Light",
             views: 21,
             likes: 3,
-            createdAt: "2025. 1. 10",
+            createdAt: "2025. 1. 10.",
         },
     ];
 
@@ -95,13 +95,13 @@ const MyRecipe: React.FC = () => {
                         <div className="recipe-container">
                             <div className="recipe-details">
                                 <span className="feature1">
-                                    <div className="feature-circle"><img src="public\image\water_drop.png" alt="물방울 이미지"></img>재료 {recipe.ingredientsCount}개</div>
+                                    <div className="feature-circle"><img src="\image\water_drop.png" alt="물방울 이미지"></img>재료 {recipe.ingredientsCount}개</div>
                                 </span>
                                 <span className="feature2">
-                                    <div className="feature-circle"><img src="public\image\Clock.png" alt="시계 이미지"></img>{recipe.stepsCount}단계</div>
+                                    <div className="feature-circle"><img src="\image\Clock.png" alt="시계 이미지"></img>{recipe.stepsCount}단계</div>
                                 </span>
                                 <span className="feature3">
-                                    <div className="feature-circle"><img src="public\image\local_bar.png" alt="칵테일 이미지"></img>도수 {recipe.alcoholContent}</div>
+                                    <div className="feature-circle"><img src="\image\local_bar.png" alt="칵테일 이미지"></img>도수 {recipe.alcoholContent}</div>
                                 </span>
                             </div>
                             <div className="recipe-footer">

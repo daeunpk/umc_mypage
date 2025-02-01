@@ -34,3 +34,7 @@
     border: 1px solid #383939;
     margin: 0;
 }
+
+.modal-overlay {
+    background-color: #16161633;
+}
